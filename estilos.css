@@ -1,53 +1,87 @@
-body {
-    margin: 0 auto;
-    max-width: 1024px;
-    background: #065f6b;
+/*Selectores basicos*/
+
+/*Selector de etiquetas, aplicar todas las etiquetas*/
+/* a {
+    color: red;
+}*/
+
+/*Selector de clases, hace referencia con un punto(.)*/
+/*.parrafo{
+    color: blue;
+}*/
+
+/*Selector de id, hace referencia con un gato(#)*/
+/*#parrafo{
+    color: blue;
+}*/
+
+/*Selector universal, se hace referencia con uin *, se recomienda
+solo para resetear el navegador*/
+/* *{
+    background: red;
+} */
+
+/*Selector de atributos
+Se hace referencia con [], se seleccionan los elementos que tengan
+ese atributo*/
+
+[href]{
+    color: red;
 }
 
-body header {
-    background: #0ed0eb;
-    color: white;
-    text-align: center;
+/*Seleccionar los elementos que tengan ese atributo y ese valor*/
+[href="#"] {
+    color: green;
 }
 
-body header h1 {
-    margin: 0 auto;
-    font-weight: 700;
-    font-size: 30px;
-    text-shadow: 5px 5px grey;
-    font-family: 'Peddana', serif;
+/*Seleccionar los elementos que tienen ese atributo y 
+ese valor al menos una vez*/
+[class~="verde"] {
+    color: blue;
 }
 
-body header nav ul {
-    background: black;
+/*Seleccionar los elementos que tienen ese atributo y 
+exactamente ese valor o empiece por el valor seguido de un guion*/
+[class|="verde"] {
+    color: red;
 }
 
-body header nav ul li {
-    display: inline-block; /rompa la caja/
-    background: #000;
-    color: #FFF;
-    margin: 0 15px;
-    padding: 5px;
+/*Seleccionar los elementos que tienen ese atributo y 
+empiecen por ese valor*/
+[class^="rojo"] {
+    color: purple;
 }
 
-body header nav ul li:hover {
-    color: black;
-    background: white;
+/*Seleccionar los elementos que tienen ese atributo y 
+terminen por ese valor*/
+[class$="verde"] {
+    color: orange;
 }
 
-footer {
-    background: #0ed0eb;
-    height: 50px;
+/*Selectores combinadores*/
+
+/*Selector hermano adyacente,
+selecciona un hermano que este justo debajo, hermano inferior*/
+
+h1 + h2 {
+    color: red;
 }
 
-#seccion1 {
-    background: white;
-    border: 3px solid black;
+/*Selectores de hermano general, aplica los estilos a todos los hermanos
+que esten debajo de el compartir el mismo padre*/
+h1 ~ h3 {
+    color: blue;
 }
 
-#seccion1 article {
-    display: inline-block;
-    border: 2px solid red;
-    width: 48%;
-    vertical-align: top;
+/*Selectores descendentes*/
+/*Aplica el estilo a todos los elementos dentro de este, se aplica a
+todos lo hijos*/
+div span {
+    color: orange;
+}
+
+/*Selector de hijo directo, busca relacion directa*/
+
+p > span {
+    color: blue;
 }
