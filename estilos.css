@@ -1,87 +1,62 @@
-/*Selectores basicos*/
+/*Herencia
+Se utiliza el valor de inherit*/
 
-/*Selector de etiquetas, aplicar todas las etiquetas*/
-/* a {
-    color: red;
-}*/
-
-/*Selector de clases, hace referencia con un punto(.)*/
-/*.parrafo{
-    color: blue;
-}*/
-
-/*Selector de id, hace referencia con un gato(#)*/
-/*#parrafo{
-    color: blue;
-}*/
-
-/*Selector universal, se hace referencia con uin *, se recomienda
-solo para resetear el navegador*/
-/* *{
-    background: red;
-} */
-
-/*Selector de atributos
-Se hace referencia con [], se seleccionan los elementos que tengan
-ese atributo*/
-
-[href]{
-    color: red;
-}
-
-/*Seleccionar los elementos que tengan ese atributo y ese valor*/
-[href="#"] {
+p{
     color: green;
 }
 
-/*Seleccionar los elementos que tienen ese atributo y 
-ese valor al menos una vez*/
-[class~="verde"] {
-    color: blue;
+a{
+    color: inherit; /*Se le dice que seleccione el color del elemento padre*/
 }
 
-/*Seleccionar los elementos que tienen ese atributo y 
-exactamente ese valor o empiece por el valor seguido de un guion*/
-[class|="verde"] {
-    color: red;
+/*Especificidad -> Cascada*/
+
+/*
+Etiquetas -> 1
+Clases -> 10
+ID -> 100
+Estilos en linea -> 1000
+!important -> Gana a todos*/
+p{
+    color: red !important;
 }
 
-/*Seleccionar los elementos que tienen ese atributo y 
-empiecen por ese valor*/
-[class^="rojo"] {
+#parrafo{
     color: purple;
 }
 
-/*Seleccionar los elementos que tienen ese atributo y 
-terminen por ese valor*/
-[class$="verde"] {
+p{
+    color: blue !important;
+}
+#parrafo{
     color: orange;
 }
+/*Box model*/
 
-/*Selectores combinadores*/
-
-/*Selector hermano adyacente,
-selecciona un hermano que este justo debajo, hermano inferior*/
-
-h1 + h2 {
-    color: red;
+h1{
+    background: lightblue;
+    width: 100px;
 }
 
-/*Selectores de hermano general, aplica los estilos a todos los hermanos
-que esten debajo de el compartir el mismo padre*/
-h1 ~ h3 {
-    color: blue;
+div{
+    background: lightcoral;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
 }
 
-/*Selectores descendentes*/
-/*Aplica el estilo a todos los elementos dentro de este, se aplica a
-todos lo hijos*/
-div span {
-    color: orange;
+a{
+    background: lightgreen;
+    height: 1000px;
 }
 
-/*Selector de hijo directo, busca relacion directa*/
-
-p > span {
-    color: blue;
+span{
+    background: red;
+}
+.caja1{
+    background: lightgreen;
+    border: 3px solid black;
+    padding: 10px;
+    margin: 20px;
+    box-sizing: border-box;
 }
