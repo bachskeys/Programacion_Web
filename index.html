@@ -3,55 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pseudoelementos y Pseudoclases</title>
     <link rel="stylesheet" href="estilos.css">
+    <title>Ejercicio css 1</title>
 </head>
 <body>
-    <h1 class="titulo">Pseudoelementos</h1>
-    <p class="texto">
-        <span> Lorem ipsum dolor sit amet consectetur</span> adipisicing elit. Quam provident repellendus molestias placeat dolorem, magnam, sint excepturi facilis adipisci quae harum minus labore earum cupiditate. Esse quam voluptas sequi eos?
-    </p>
-    <p class="dinero">10</p>
-    <p class="ejemplo">ejemplo</p>
-    <span class="linea">Elemento línea</span>
+    <header>
+        <img src="img/resplandor.png" alt="resplandor">
+        <img src="img/logo.png" alt="logo" id="logo">
+        <nav>
+            <ul>
+                <li>Inicio</li>
+                <li>Sección</li>
+                <li>Sección</li>
+                <li>Sección</li>
+                <li>Sección</li>
+                <li>Sección</li>
+            </ul>
+            <form action="#">
+                <imput type="search" placeholder="Buscar aquí..." class="buscador">
+                <imput type="submit" value="buscar" class="boton-buscar">
+            </form>
+        </nav>
+</header>
+    <section class="seccion1">
+        <article>
+            <img src="img/slide.jpg" alt="imagen principal">
+        </article>
+    </section>
+    <section class="seccion2">
+        <article>
+            <img src="img/separador.jpg" alt="separador">
+            <h1>Una sección</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, perferendis sit fuga, ab earum eum quia doloribus quidem laborum quos voluptas architecto voluptatibus repudiandae voluptates, assumenda veniam ratione et corporis!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, perferendis sit fuga, ab earum eum quia doloribus quidem laborum quos voluptas architecto voluptatibus repudiandae voluptates, assumenda veniam ratione et corporis!
+            </p>
+            <imput type="submit" value="Ver más" class="ver-mas">
+        </article>
+        <article>
+            <img src="img/separador.jpg" alt="separador">
+            <h2>Otra sección</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, perferendis sit fuga, ab earum eum quia doloribus quidem laborum quos voluptas architecto voluptatibus repudiandae voluptates, assumenda veniam ratione et corporis!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam c!
+            </p>
+            <imput type="submit" value="Ver más" class="ver-mas">
+        </article>
+        <article>
+            <img src="img/separador.jpg" alt="separador">
+            <h2>Un vídeo</h2>
+            <video controls src="#"></video>
+        </article>
 
+    </section>
 
-    <h2>Pseudoclases</h2> 
-
-    <!--DINAMICAS-->
-    <a class="enlace" href="enlace.com">Enlace no visitado</a>
-    <a class="enlace" href="#">Enlace visitado</a>
-    <input type="text">
-
-     <!--ESTADO-->
-
-     <form action="#">
-         <label class="label">:enabled</label>
-         <input class="input" type="text">
-
-         <label class="label">:disabled</label>
-         <input class="input" type="text" disabled>
-
-         <label class="label">:required</label>
-         <input class="input" type="text" required>
-
-         <input id="checkbox" type="checkbox" class="input checkbox">
-         <label for="checkbox" class="label">:checked</label>
-
-         <label class="label">:in-range y :out-of-range</label>
-         <input class="input" type="number" min="10" max="30">
-     </form>
-
-     <h3>Estructurales</h3> 
-     <div class="contenedor">
-         <p class="parrafo">parrafo 1</p>
-         <p class="parrafo">parrafo 2</p>
-         <p class="parrafo">parrafo 3</p>
-         <p class="parrafo">parrafo 4</p>
-         <p class="parrafo">parrafo 5</p>
-         <p class="parrafo">parrafo 6</p>
-         <p class="parrafo">parrafo 7</p>
-         <p class="parrafo">parrafo 8</p>
-     </div>
+    <footer>
+        <section>Ultima busqueda</section>
+        <section></section>
+    </footer>
 </body>
 </html>
