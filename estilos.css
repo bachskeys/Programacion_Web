@@ -1,62 +1,92 @@
-/*Herencia
-Se utiliza el valor de inherit*/
-
-p{
-    color: green;
-}
-
-a{
-    color: inherit; /*Se le dice que seleccione el color del elemento padre*/
-}
-
-/*Especificidad -> Cascada*/
+/*Position*/
 
 /*
-Etiquetas -> 1
-Clases -> 10
-ID -> 100
-Estilos en linea -> 1000
-!important -> Gana a todos*/
-p{
-    color: red !important;
-}
+Flujo HTML: es el orden en el que aparecen los elementos en el documento.
+Espacio: Es el espacio que ocupa en el documento, lo reserva el navegador.
+*/
 
-#parrafo{
-    color: purple;
-}
-
-p{
-    color: blue !important;
-}
-#parrafo{
-    color: orange;
-}
-/*Box model*/
-
-h1{
-    background: lightblue;
-    width: 100px;
-}
-
-div{
-    background: lightcoral;
-    height: 100px;
-    width: 100px;
-    border: 1px solid black;
-}
-
-a{
-    background: lightgreen;
-    height: 1000px;
-}
-
-span{
-    background: red;
-}
-.caja1{
-    background: lightgreen;
-    border: 3px solid black;
-    padding: 10px;
-    margin: 20px;
-    box-sizing: border-box;
-}
+.parrafo1 {
+    /* visibility: hidden; Elemento reserva su espacio*/
+     display: none; /*El espacio no se reserva*/
+ }
+ 
+ /*RELATIVE*/
+ 
+ .contenedor1, contenedor2 {
+     width: 100px;
+     height: 100px;
+     margin: 20px;
+ }
+ 
+ .contenedor1 {
+     background: lightgreen;    
+     position: relative;
+     /* top right bottom left z-index*/
+     /*top y left tienen mayor preferencia*/
+     top: 100px;
+     right: 30000px;
+     left: 50px;
+     bottom: 1000px;
+     z-index: 10;
+ }
+ 
+ .contenedor2 {
+     background: blue;
+     position: relative;
+     z-index: 20;    
+ }
+ 
+ .contenedor3 {
+     background: black;
+     position: relative;
+     top: 300px;    
+ }
+ 
+ /*ABSOLUTE*/
+ 
+ .contenedor {
+     width: 300px;
+     height: 300px;
+     border: 3px solid black;
+     position: relative;
+ }
+ 
+ /*Seleccionar los elementos que tienen ese atributo y empiecen por ese valor*/
+ [class^="caja"] {
+     width: 40px;
+     height: 40px;
+ }
+ 
+ .caja1{
+     border: 3px solid red;
+     position: absolute; /*No conserva su espacio*/
+     top: 0;
+     left: 0;
+ }
+ .caja2{
+     border: 3px solid blue;
+     position: absolute;
+     top: 0;
+     right: 0;
+ }
+ .caja3{
+     border: 3px solid orange;
+     position: absolute;
+     bottom: 0;
+     left: 0;
+ }
+ .caja4{
+     border: 3px solid purple;
+     position: absolute;
+     bottom: 0;
+     right: 0;
+ }
+ .caja5{
+     border: 3px solid green;
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     margin: auto;
+ }
