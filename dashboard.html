@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Tarea 2 CSS</title>
+</head>
+<body>
+    <header>
+        <img  src="img-dashboard/logo.png" alt="logo" id="logo">
+        <nav>
+            <ul>
+                <li>Notifications</li>
+                <li>Messages</li>
+                <li>Settings</li>
+            </ul>
+        </nav>
+    </header>
+    <aside>
+        <section id="link-section">
+            <div class="link-card">
+                <h3>Panel with Links</h3>
+                <ul class="example-list"> 
+                    <li class="example-item">&lt;/>Example</li>
+                    <li class="example-item">&lt;/>Example</li>
+                    <li class="example-item">&lt;/>Example</li>
+                    <li class="example-item">&lt;/>Example</li>
+
+                </ul>
+            </div>
+            <div>
+                <h3>Panel with Progress</h3>
+                <div class="progress-card">
+                    <p>Progress bar</p>
+                    <span class="progress-1"></span>
+                    <p>Progress bar</p>
+                    <span class="progress-2"></span>
+                    <p>Progress bar</p>
+                    <span class="progress-3"></span>
+                </div>
+            </div>
+        </section>
+    </aside>
+    <section id="main-section">
+        <div class="row">
+            <div class="column card" id="card-green">
+                <img class="card-img" src="./img-dashboard/payment.png"/>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="column card" id="card-yellow" >
+                <img class="card-img" src="./img-dashboard/history.png"/>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="column card" id="card-purple" >
+                <img class="card-img" src="./img-dashboard/list.png"/>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="column card" id="card-red">
+                <img class="card-img" src="./img-dashboard/module.png"/>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column graph-card1" >
+                <h3 class="graph-title1">84%</h3>
+                <img class="graph" src="./img-dashboard/grafico.png"/>
+                <p class="graph-lorem1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="column graph-card2" >
+                <h3 class="graph-title2">36%</h3>
+                <img class="graph" src="./img-dashboard/grafico.png"/>
+                <p class="graph-lorem2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="column graph-card3" >
+                <h3 class="graph-title3">22%</h3>
+                <img class="graph" src="./img-dashboard/grafico.png"/>
+                <p class="graph-lorem3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>     
+        <div class="row">
+            <div class="column card-user" ><img class="user-img" src="./img-dashboard/user-1.png"/></div>
+            <div class="column card-user" ><img class="user-img" src="./img-dashboard/user-2.png"/></div>
+            <div class="column card-user" ><img class="user-img" src="./img-dashboard/user-3.png"/></div>
+            <div class="column card-user" ><img class="user-img" src="./img-dashboard/user-4.png"/></div>
+        </div>
+    </section>
+</body>
+</html>

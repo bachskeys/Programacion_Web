@@ -1,0 +1,211 @@
+body{
+    background-color:#eaeaea ;    
+}
+
+nav ul{
+    display: inline-block;
+    float: right;
+}
+header{
+    text-align: center;
+    margin-bottom: 100px;
+}
+header #logo{
+    width: 300px;
+}
+
+
+
+nav ul li{
+    display: inline-block;
+     border-bottom: solid black 1px;
+     text-align: center;
+     font-family: 'Roboto Condensed', sans-serif;  
+     margin: 0px 50px 0px 0px;
+ }
+
+ .example-list{
+     background-color: #45718a;
+     list-style: none;
+     margin-block-end: 0 !important;
+     margin-block-start: 0 !important;
+     margin-bottom: 30px !important;
+ }
+ .example-item{
+     padding:15px;
+     color: #fafafa;
+ }
+
+ aside {
+    width:20%;
+    float:left;
+ }
+
+
+
+ #main-section{
+     background-color: white;
+     width: 60%;
+     text-align: center;
+     float: right;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding:50px;
+     flex-direction: column;
+     margin-right: 90px;
+     border-radius: 20px;
+ }
+
+ .row{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+    }
+.column{
+    margin:30px;
+}
+
+ #link-section div h3 {
+     background-color: #1a587b;
+     height: 40px;
+     color: #fafafa;
+     padding: 10px;
+     margin-block-end: 0 !important;
+     margin-block-start: 0 !important;
+
+ }
+
+ .card{
+     height: 140px;
+     width: 170px;
+     border-radius: 15px;
+ }
+
+
+ #card-green{
+     background-color: green;
+ }
+ #card-yellow{
+    background-color: yellow;
+}
+#card-purple{
+    background-color: purple;
+}
+#card-red{
+    background-color: red;
+}
+
+.card-img{
+    width: 30px;
+    margin-top: 20px;
+}
+
+p{
+    color:#fafafa;
+    font-size: 15px;
+    padding-bottom: 50px;
+}
+
+
+
+.graph{
+    width: 230px;
+}
+
+.graph-card1{
+    border: 2px solid #bbe7ef;
+}
+.graph-card2{
+    border: 2px solid #fbeccd;
+}
+.graph-card3{
+    border: 2px solid #ebcbd1;
+}
+
+.graph-title1{
+    background-color: #bbe7ef;
+    margin:0 !important;
+}
+.graph-title2{
+    background-color: #fbeccd;
+    margin:0 !important;
+}
+
+.graph-title3{
+    background-color: #ebcbd1;
+    margin:0 !important;
+}
+.graph-lorem1{
+    color: #bbe7ef;
+    font-size: 20px;
+    padding-bottom: 0px;
+}
+.graph-lorem2{
+    color: #fbeccd;
+    font-size: 20px;
+    padding-bottom: 0px;
+}
+.graph-lorem3{
+    color: #ebcbd1;
+    font-size: 20px;
+    padding-bottom: 0px;
+}
+
+.user-img{
+    width: 100px;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+.card-user{
+    width: 160px;
+    height: 160px;
+    background-color: #437b92;
+}
+
+.progress-card{
+    display: block;
+    height: 300px;
+    background-color: white;
+}
+
+.progress-card p{
+    color:black;
+    margin-block-start: 0 !important;
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.progress-1{
+    position: relative;
+    display: block;
+    height: 30px;
+    width: 70px;
+    background-color: red;
+    padding-right: 50px;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+.progress-2{
+    position: relative;
+    display: block;
+    height: 30px;
+    width: 15px;
+    background-color: green;
+    padding-right: 50px;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+.progress-3{
+    position: relative;
+    display: block;
+    height: 30px;
+    width: 150px;
+    background-color: yellowgreen;
+    padding-right: 50px;
+    margin-left: 20px;
+    margin-right: 30px;
+}
