@@ -1,0 +1,86 @@
+header{
+    text-align: center;
+    margin-bottom: 100px;
+}
+header #logo{
+    width: 200px;
+}
+ nav{
+    opacity: 0.7;
+    height: 70px;
+ }
+nav ul{
+    display: inline-block;
+}
+
+nav ul li{
+    display: inline-block;
+     text-align: center;
+     font-family: 'Roboto Condensed', sans-serif;  
+     margin: 0px 20px 0px 0px;
+     font-size: 20px;
+     border-bottom: .5px solid silver;
+     border-top: .5px solid silver;
+     padding: 10px;
+ }
+
+ section {
+     text-align: center;
+      margin-left: 165px;
+      margin-right: 700px;
+      font-size: 12x;
+ }
+
+ h1{
+     font-size: 40px;
+ }
+
+#libro-img{
+    width: 700px;
+    position: absolute;
+    top:200px;
+    right:80px;
+    z-index: -1;
+}
+
+footer{
+    display: block;
+    width: 100%;
+}
+
+footer section{
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+#img-footer1{
+    width: 120px;
+    margin-left: 150px;
+}
+
+#img-footer2{
+    width: 200px;
+    margin-left: 80px;
+}
+
+#img-footer3{
+    width: 150px;
+    margin-left: 50px;
+}
+
+#amazon-btn{
+    width: 150px;
+    height: 50px;
+}
+
+.book {
+    background-color: orange;
+    border: none;
+    border-radius: 1px;
+    height: 40px;
+    margin-bottom: 50px;
+}
+
